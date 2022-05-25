@@ -15,6 +15,19 @@ def statement_generator(text, decoration):
 
     return ""
 
+# displays intructions / infromation
+def instructions():
+
+    statement_generator("Instructions / Information", "=")
+    print()
+    print("Please choose a data type (image / text / integer)")
+    print()
+    print("This program assumes that images are being represented in 24 bit coulor (ie:24 per pixel). For text, we assume that ascii encoding is being used (8 bits per character).")
+    print()
+    print("complete as many calculations as necessary, pressing <enter> at the end of each calculation or any key to quit.")
+    print()
+    return""
+
 
 # checks user choice is "integer", "text" or "image"
 def user_choice ():
@@ -177,7 +190,7 @@ while keep_going == "":
         text_bits()
 
     print()
-    keep_going = input("")
+    keep_going = input("Press <enter> to continue or any key to quit ")
     print()
 
 
