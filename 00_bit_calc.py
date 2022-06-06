@@ -16,7 +16,7 @@ def statement_generator(text, decoration):
     return ""
 
 # displays intructions / infromation
-def instructions():
+def instructions(): 
 
     statement_generator("Instructions / Information", "=")
     print()
@@ -65,7 +65,7 @@ def user_choice ():
             # if responce is not valid, output an error
             print("please choose a vaild file type!")
             print()
-
+ 
 
 # checks input is a number more than a given value
 def num_check(question, low):
@@ -167,7 +167,10 @@ def int_bits():
 statement_generator("Bit calcultor for Integers, Text & Images", "-")
 
 # Display instructions if user has not used the program before
+first_time = input("Press <enter> to see the instructions or any key to continue ")
 
+if first_time == "":
+    instructions()
 # Loop to allow multiple calculations per session 
 keep_going = ""
 while keep_going == "":
@@ -193,4 +196,6 @@ while keep_going == "":
     keep_going = input("Press <enter> to continue or any key to quit ")
     print()
 
-
+print()
+print("----Thanks for using Bit Calculator----")
+print()
